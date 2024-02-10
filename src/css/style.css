@@ -1,0 +1,354 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body{
+    background-color: #241c1c ;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ccc;
+}
+#navbar img{
+   width: 100px;
+}
+#menu-links{
+    width: 170px;
+    height: 100px;
+}
+
+#navbar{
+    padding: 1.5rem 2.5rem;
+    border-bottom: 1px solid #025a0f;
+}
+#navbar-inner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#nav-links{
+    display: flex;
+    gap: 1rem;
+    margin-top: 30px;
+}
+#galeria-pratos {
+    text-align: center;
+   
+}
+#galeria{
+    text-align: center;
+}
+#galeria img{
+    width: 15%;
+    margin: 0 auto;
+    animation: fade 3s infinite;
+}
+/*
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    33% {
+      opacity: 1;
+    }
+    53% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }*/
+.container{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;  
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+#container-banner img{
+    width: 50%;
+    margin: 0 293px
+}
+.menu{
+    margin-bottom: 1.5rem;
+}
+.title{
+    font-size: 1rem;
+    color: #025a0f;
+}  
+
+#cardapio h2{
+    margin: 20px 90px;
+    
+}
+#cardapio p{
+   margin: 10px 90px;
+   color: #ccc;
+   text-align: justify;
+   margin-bottom: 2rem;
+}
+
+/*FOOTER*/
+#footer{
+    display: block;
+    border-top: 1px solid #025a0f;
+    padding: 2rem;
+    color: #159228;
+    gap: 8rem;
+    margin: auto;
+}
+.contact-footer{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+#footer p{
+    text-align: center;
+    margin-top: 5px;
+}
+.face{
+    padding-bottom: 5px;
+}
+.phone{
+    padding-bottom: 5px;
+}
+
+copy{
+    color: #025a0f;
+    text-align: center;
+}
+
+/*Sobre*/
+h2{ 
+    color: #025a0f;
+}
+.about{
+    color: #ccc;
+    font-size: 18px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: justify;  
+}
+#local img{
+    width: 450;
+    height:350px;
+}
+#local{
+    text-align: center;
+}
+
+/*FORMYULARIO*/
+.contato-container{
+    display: block;
+    text-align: center;
+}
+.container-form{
+    margin: 0 auto;
+    padding: 1rem 0     2rem 0;
+}
+.contact-container h2{
+    text-align: center;
+    margin-bottom: 10px ;
+}
+.contact-container input{
+    width: 290px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #159228;
+    margin: 0 10px 20px;
+    background-color: #241c1c;
+    color: #ccc;
+}
+.contact-container textarea{
+    display: block;
+    margin: 0 auto 20px;
+    width: 600px;
+    height: 150px;
+    background-color: #241c1c;
+    color:#ccc;
+}
+
+/*novo menu*/
+.menu-container{
+    margin: 20px auto;
+    padding: 2rem;
+    border: 1px solid #025a0f;
+    width: 80%;
+}
+.prato-container{
+    align-items: center;
+    
+}
+.container-menu{
+    display: flex;
+    gap: 2rem;
+}
+   
+.menu-name{
+    font-size: 18px;
+    color: #159228;
+    margin: 5px auto;
+}
+.menu-name-title{
+    color: #159228;
+    border-bottom: 2px dotted #025a0f;
+}
+.menu .desc-menu{
+    color: #ccc;
+    margin-bottom: 10px;
+}
+/*RESPONSIVO*/
+@media(max-width:1024px){
+    #galeria-pratos img{
+        width: 15%;
+    }
+}
+@media(max-width:900px){
+    html,body{
+        overflow-x: hidden;
+    }
+    #navbar{
+        padding: 0.5rem 0.5rem;
+    }
+    .contact-container{
+        margin-top: 30px;
+    }
+    .contact-container h2{
+        margin-bottom: 30px;
+    }
+   
+    h2{
+        margin-left: 20px;
+    }
+    .about{
+        width: 90%;
+        text-align: justify;
+        margin-left: 20px;  
+    }
+    #local img{
+        width: 30%;
+        height: 15%;
+    }
+    #container-banner img{
+        margin: auto 226px;
+    }
+    .face,
+    .phone,
+    .whats{
+        font-size: 15px;
+    }    
+}
+@media(max-width: 768px){
+    html,body{
+        overflow-x: hidden;
+       }
+    #galeria-pratos{
+       width: 100%;
+    }
+    #galeria-pratos img{
+        width: 15%;
+    }
+
+    #container-banner img{
+        width: 40%;
+        margin: 0 244px;
+        
+    }
+    #navbar{
+        padding: 0.5rem 0.5rem;
+    }
+    #banner-iframe iframe{
+        width: 480px;
+        height: 350px;
+    }
+    .face,
+    .phone,
+    .whats{
+        font-size: 13px;
+    }
+    #footer p{
+        font-size: 13px;
+    }
+}
+@media(max-width:576px){
+   html,body{
+    overflow-x: hidden;
+   }
+   #navbar{
+    padding: 0.5rem 1rem;
+   }
+   #container-banner img{
+    margin: auto  190px;
+   }
+}
+@media(max-width:425px){
+    html,body{
+        overflow-x: hidden;
+    }   
+    #navbar{
+        padding: 0.2rem 0.5rem;
+    }
+    #galeria{
+      flex-direction: column;
+      width: 80%;      
+    }
+    #galeria img{
+      width: 60%;
+      max-width: 50%;
+      margin: 0 140px;
+    }
+    #navbar-inner img{
+        width: 20%;
+    }
+    #nav-links li{
+        font-size: 13px;
+    }
+    #container-banner img{
+       margin: auto 137px;
+       width: 150px;
+       height: 200px;
+    }
+    #local img{
+        width: 40%;
+    }
+    #message{
+        width: 90%;
+    }
+    #name{
+        width: 90%;
+    }
+    #email{
+        width: 90%;
+    }
+    #banner-iframe iframe{
+        width: 390px;
+        height: 300px;
+       
+    }
+    #footer{
+        padding: 1rem;
+    }
+    .face,
+    .phone,
+    .whats{
+        font-size: 10px;
+    }
+    .container-menu{
+        flex-direction: column;
+    }
+}
