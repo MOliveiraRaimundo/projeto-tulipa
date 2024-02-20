@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurante Tulipa</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/script.js" defer></script>
 </head>
+
 <body>
     <header>
         <nav id="navbar">
             <div id="navbar-inner">
                 <img src="img/logo_-_Copia-removebg-preview.png" alt="">
                 <ul id="nav-links">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="menu.html">Cardápio</a></li>
                     <li><a href="sobre.html ">Sobre</a> </li>
                     <li><a href="contato.html">Contato</a> </li>
@@ -24,24 +26,33 @@
             </div>
         </nav>
     </header>
-        
-        <div id="galeria">
-            <img src="img/prato1.jpg" alt="">
-            <img src="img/prato6.jpg" alt="">
-            <img src="img/prato3.jpg" alt="">
-            <img src="img/local.jpg" alt="">
-           
+    <div id="galeria">
+        <img src="img/bife_a_milanesa.jpg" class="imagem ativa" alt="Bife a milenesa">
+        <img src="img/espaguete-bolonhesa.jpg" class="imagem" alt="Espaguete bolonhesa">
+        <img src="img/parmegiana.jpg" class="imagem" alt="Parmegiana">
+        <img src="img/prato_gaucha.png" class="imagem" alt="A gaucha">
+    </div>
+
+    <div class="botoes-carrossel">
+        <button class="botao selecionado"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+        <button class="botao"></button>
+    </div>
+    <!------MENU------------->
+    <main class="container">
+        <div class="container-title">
+            <h1 id="title-principal">O que você gostaria para hoje?</h1>
+            <p id="description-principal">
+                No fim das contas, a gente trabalha para bancar momentos
+                que não tem preço, com pessoas que valem ouro.
+            </p>
         </div>
-        <!------MENU------------->
-        <main class="container">
-            <div id="container-banner">
-               <img src="img/logo_aviso.jpg" alt="">
-            </div>
     </main>
     <footer id="footer">
         <div class="contact-footer">
             <div class="face">
-                <i class="fab fa-facebook-f"> Facebook</i>
+                <i class="fa-brands fa-facebook"> Facebook</i>
             </div>
             <div class="phone">
                 <i class="fa-solid fa-phone"> (12) 3144-4301</i>
@@ -53,7 +64,7 @@
         <div>
             <p>2024 &copy; Todos os direitos Reservados </p>
         </div>
-       
     </footer>
 </body>
+
 </html>
