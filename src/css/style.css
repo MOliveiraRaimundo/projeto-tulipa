@@ -255,6 +255,13 @@ h2 {
     background-color: #241c1c;
     color: #ccc;
 }
+#btn-enviar{
+    padding: 10px 10px;
+    border: 1px solid #159228;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
 
 /*novo menu*/
 .menu-container {
@@ -454,7 +461,9 @@ h2 {
     #banner-iframe iframe {
         width: 390px;
         height: 300px;
-
+    }
+    #btn-enviar{
+        width: 40%;
     }
 
     #footer {
